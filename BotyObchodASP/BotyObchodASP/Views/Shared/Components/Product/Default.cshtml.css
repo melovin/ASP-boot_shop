@@ -1,0 +1,87 @@
+﻿body {
+font-family: 'libre franklin';
+}
+.products {
+margin-right: auto;
+margin-left: auto;
+text-align: center;
+}
+
+.products:hover {
+cursor: pointer;
+}
+
+.products .wrapper .product {
+border: solid #b9b9b9 1px;
+}
+
+.products .wrapper .product .product_photo {
+height: 15rem;
+}
+
+.products .wrapper .price {
+display: flex;
+margin-left: 1rem;
+gap: 1rem;
+justify-content: space-between;
+}
+
+.products .wrapper .price .actual_price {
+display: flex;
+gap: 1rem;
+align-items: center;
+}
+
+.products .wrapper .price .actual_price .current {
+color: #c7232f;
+font-weight: bold;
+}
+
+.products .wrapper .price .actual_price .old {
+color: #ababab;
+}
+
+.products .product .desc {
+margin-left: 1rem;
+width: 80%;
+text-align: left;
+}
+
+.hidden_cart {
+display: none;
+}
+
+.products .wrapper .product:hover .hidden_cart {
+display: block;
+margin-right: 1rem;
+}
+
+.products .wrapper .product:hover {
+outline: solid #c7232f 2px;
+}
+
+.products button {
+border: none;
+background: #c7232f;
+color: white;
+font-size: 25px;
+width: 20rem;
+padding: 1rem;
+margin-top: 3rem;
+cursor: pointer;
+}
+button:hover {
+background-color: white;
+color: #c7232f;
+outline: solid red 1px;
+}
+
+.notDesktop {
+display: none !important;
+}
+
+@media screen and (max-width:640px) {
+.products button {
+width: 18rem;
+}
+}

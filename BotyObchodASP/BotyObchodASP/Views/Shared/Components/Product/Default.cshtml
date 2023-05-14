@@ -1,0 +1,19 @@
+﻿
+
+
+<a asp-controller="Product" asp-action="Index" asp-route-productId="@ViewBag.Product.Id" asp-route-variantId="@Enumerable.FirstOrDefault(ViewBag.Product.TbStocks).Id">
+    <div class="product">
+        <img class="product_photo" src="@Enumerable.FirstOrDefault(ViewBag.Product.TbPictures).Path" alt="shoe">
+        <p class="desc">@ViewBag.Product.Name</p>
+        <div class="price">
+            <div class="actual_price">
+                <p class="current">@Math.Round(((Enumerable.FirstOrDefault(ViewBag.Product.TbStocks).Price * (100 + Enumerable.FirstOrDefault(ViewBag.Product.TbStocks).Tax) / 100) * (100 - Enumerable.FirstOrDefault(ViewBag.Product.TbStocks).Discount) / 100)) Kč</p>
+                @if (Enumerable.FirstOrDefault(ViewBag.Product.TbStocks).Discount != 0)
+                {
+                    <s class="old"> @Math.Round((Enumerable.FirstOrDefault(ViewBag.Product.TbStocks).Price * (100 + Enumerable.FirstOrDefault(ViewBag.Product.TbStocks).Tax)/100)) Kč</s>
+                }
+            </div>
+            <img class="hidden_cart" src="img/cart.svg" alt="cart">
+        </div>
+    </div>
+</a>

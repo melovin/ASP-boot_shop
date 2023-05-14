@@ -1,0 +1,154 @@
+﻿@{
+    ViewData["Title"] = "Detail";
+}
+<script>
+    function Update() {
+        document.forms["form"].submit();
+    }
+</script>
+<div class="navigation">
+    <a asp-controller="Home" asp-action="Index">Domů ></a>
+    <a href="#">Dívčí boty ></a>
+    <a class="current" href="#">Tenisky</a>
+</div>
+<div class="detail">
+    <div class="left">
+        <a class="main_ph" href="@((ViewBag.Product as TbProduct).TbPictures.First(x => x.PrimaryImg).Path)"><img src="@((ViewBag.Product as TbProduct).TbPictures.First(x => x.PrimaryImg).Path)" alt="main_photo"></a>
+        <a class="first" href="@((ViewBag.Product as TbProduct).TbPictures.Where(x => !x.PrimaryImg).ElementAt(0).Path)"><img src="@((ViewBag.Product as TbProduct).TbPictures.Where(x => !x.PrimaryImg).ElementAt(0).Path)" alt="shoe"></a>
+        <a class="second" href="@((ViewBag.Product as TbProduct).TbPictures.Where(x => !x.PrimaryImg).ElementAt(1).Path)"><img src="@((ViewBag.Product as TbProduct).TbPictures.Where(x => !x.PrimaryImg).ElementAt(1).Path)" alt="shoe"></a>
+        <a class="third" href="@((ViewBag.Product as TbProduct).TbPictures.Where(x => !x.PrimaryImg).ElementAt(2).Path)"><img src="@((ViewBag.Product as TbProduct).TbPictures.Where(x => !x.PrimaryImg).ElementAt(2).Path)" alt="shoe"></a>
+    </div>
+    <div class="right">
+        <div class="header">
+            <h1>@ViewBag.Product.Name <br> @ViewBag.Variant.IdColorNavigation.Name</h1>
+            <img class="notMobile" src="img2/logo.webp" alt="logo">
+        </div>
+        <p class="notMobile Main_desc">
+            @*Tyhle botky mají styl! Kožené barefoot tenisky vhodné na užší až normální <br> nožku.
+            Vyrobené z kvalitní hladké kůže v kombinaci s textilem. Tenká podešev <br>přesahuje přes prsty,
+            aby byla botka chráněna před poškozením.*@
+            @ViewBag.Product.Description
+        </p>
+        <hr>
+        <form id="form" name="selector" asp-action="DetailPrep" asp-route-productId="@ViewBag.Product.Id">
+            <div class="selector">
+                <div class="color">
+                    <p>Barva</p>
+                    <div class="colors">
+                        @foreach (TbStock item in ViewBag.Colors)
+                        {
+                            <label class="radioB">
+                                @if(item.IdColor == ViewBag.Variant.IdColor)
+                                {
+                                    <input checked onchange="Update()" value="@item.IdColor" name="colorId" type="radio">
+                                }
+                                else
+                                {
+                                    <input onchange="Update()" value="@item.IdColor" name="colorId" type="radio">
+                                }
+                                <span style="background:@item.IdColorNavigation.HexCode" class="checked"></span>
+                            </label>
+                        }
+                    </div>
+                </div>
+                <div class="size">
+                    <p class="header">Velikost</p>
+                    <div class="sizes">
+                        @foreach(int size in ViewBag.Sizes)
+                        {
+                            <label class="radioB">
+                                @if(size == ViewBag.Variant.Size)
+                                {
+                                    <input checked onchange="Update()" name="size" value="@size" type="radio">
+                                }
+                                else
+                                {
+                                    <input onchange="Update()" name="size" value="@size" type="radio">
+                                }
+                                <span class="checked">@size</span>
+                            </label>
+                        }
+                    </div>
+                </div>
+            </div>
+
+        <hr>
+        <p class="stock">Skladem</p>
+        <s class="old">@Math.Round(ViewBag.Variant.Price * (100 + ViewBag.Variant.Tax)/100) Kč</s>
+        <div class="priceAndButton">
+            <p>@Math.Round((ViewBag.Variant.Price * (100 + ViewBag.Variant.Tax) / 100) * (100 - ViewBag.Variant.Discount) / 100) Kč</p>
+            <a asp-controller="Cart">
+                <button asp-controller="Cart" asp-action="Index" asp-route-variantId="@ViewBag.Variant.Id" class=" BtnPrimary notMobile">Přidat do košíku</button>
+                 <button asp-controller="Cart" asp-action="Index" asp-route-variantId="@ViewBag.Variant.Id" class=" BtnPrimary addToCard notDesktop">Do košíku</button>
+            </a>
+        </div>
+        </form>
+    </div>
+</div>
+<div class="desc">
+    <div class="left">
+        <h2>Informace o produktu</h2>
+        <p>@ViewBag.Product.DetailedDescription</p>
+    </div>
+    <div class="right">
+        <table>
+            <caption>
+                Parametry produktu
+            </caption>
+            <tr>
+                <th>Druh</th>
+                <td>@ViewBag.Product.Type</td>
+            </tr>
+            <tr>
+                <th>Materiál</th>
+                <td>@ViewBag.Product.Material</td>
+            </tr>
+            <tr>
+                <th>Kód</th>
+                <td>@ViewBag.Variant.Code</td>
+            </tr>
+        </table>
+
+    </div>
+</div>
+<div class="middle_divider">
+    <hr>
+    <img src="img/Group%20295.svg" alt="foot">
+    <hr>
+</div>
+<div class="youMayLike">
+    <h2>Mohlo by se <span>Vám líbit</span></h2>
+    <div class="products">
+        @foreach (TbProduct item in ViewBag.Products) 
+        {
+            <vc:product product="item"></vc:product>
+        }
+    </div>
+</div>
+<div class="middle_divider">
+    <hr>
+    <img src="img/Group%20295.svg" alt="foot">
+    <hr>
+</div>
+<div class="circles">
+    <div class="item">
+        <div class="img img1"></div>
+        <a href="#">Vše máme skladem</a>
+    </div>
+    <div class="item">
+        <div class="img img2"></div>
+        <a href="#">Doprava zdarma</a>
+    </div>
+    <div class="item">
+        <div class="img img3"></div>
+        <a href="#">Jak měřit velikosti</a>
+    </div>
+</div>
+<div class="emailSection">
+    <h2>Nezmeškejte nové a výhodné akce</h2>
+    <p>Zadejte svůj e-mail a obratem vám zašleme PDF s inspirací zdarma.</p>
+    <form action="newsletters.php">
+        <input name="main" required type="email" placeholder="Zadejte svůj email...">
+        <button type="submit">přihlásit</button>
+    </form>
+</div>

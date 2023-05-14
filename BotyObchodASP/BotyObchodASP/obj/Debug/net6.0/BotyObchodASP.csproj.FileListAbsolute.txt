@@ -1,0 +1,142 @@
+C:\Users\rusla\Desktop\BotyObchodASP\BotyObchodASP\bin\Debug\net6.0\appsettings.Development.json
+C:\Users\rusla\Desktop\BotyObchodASP\BotyObchodASP\bin\Debug\net6.0\appsettings.json
+C:\Users\rusla\Desktop\BotyObchodASP\BotyObchodASP\bin\Debug\net6.0\BotyObchodASP.staticwebassets.runtime.json
+C:\Users\rusla\Desktop\BotyObchodASP\BotyObchodASP\bin\Debug\net6.0\BotyObchodASP.exe
+C:\Users\rusla\Desktop\BotyObchodASP\BotyObchodASP\bin\Debug\net6.0\BotyObchodASP.deps.json
+C:\Users\rusla\Desktop\BotyObchodASP\BotyObchodASP\bin\Debug\net6.0\BotyObchodASP.runtimeconfig.json
+C:\Users\rusla\Desktop\BotyObchodASP\BotyObchodASP\bin\Debug\net6.0\BotyObchodASP.dll
+C:\Users\rusla\Desktop\BotyObchodASP\BotyObchodASP\bin\Debug\net6.0\BotyObchodASP.pdb
+C:\Users\rusla\Desktop\BotyObchodASP\BotyObchodASP\obj\Debug\net6.0\BotyObchodASP.csproj.AssemblyReference.cache
+C:\Users\rusla\Desktop\BotyObchodASP\BotyObchodASP\obj\Debug\net6.0\BotyObchodASP.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\rusla\Desktop\BotyObchodASP\BotyObchodASP\obj\Debug\net6.0\BotyObchodASP.AssemblyInfoInputs.cache
+C:\Users\rusla\Desktop\BotyObchodASP\BotyObchodASP\obj\Debug\net6.0\BotyObchodASP.AssemblyInfo.cs
+C:\Users\rusla\Desktop\BotyObchodASP\BotyObchodASP\obj\Debug\net6.0\BotyObchodASP.csproj.CoreCompileInputs.cache
+C:\Users\rusla\Desktop\BotyObchodASP\BotyObchodASP\obj\Debug\net6.0\BotyObchodASP.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\rusla\Desktop\BotyObchodASP\BotyObchodASP\obj\Debug\net6.0\BotyObchodASP.RazorAssemblyInfo.cache
+C:\Users\rusla\Desktop\BotyObchodASP\BotyObchodASP\obj\Debug\net6.0\BotyObchodASP.RazorAssemblyInfo.cs
+C:\Users\rusla\Desktop\BotyObchodASP\BotyObchodASP\obj\Debug\net6.0\staticwebassets.build.json
+C:\Users\rusla\Desktop\BotyObchodASP\BotyObchodASP\obj\Debug\net6.0\staticwebassets.development.json
+C:\Users\rusla\Desktop\BotyObchodASP\BotyObchodASP\obj\Debug\net6.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+C:\Users\rusla\Desktop\BotyObchodASP\BotyObchodASP\obj\Debug\net6.0\scopedcss\bundle\BotyObchodASP.styles.css
+C:\Users\rusla\Desktop\BotyObchodASP\BotyObchodASP\obj\Debug\net6.0\scopedcss\projectbundle\BotyObchodASP.bundle.scp.css
+C:\Users\rusla\Desktop\BotyObchodASP\BotyObchodASP\obj\Debug\net6.0\BotyObchodASP.dll
+C:\Users\rusla\Desktop\BotyObchodASP\BotyObchodASP\obj\Debug\net6.0\refint\BotyObchodASP.dll
+C:\Users\rusla\Desktop\BotyObchodASP\BotyObchodASP\obj\Debug\net6.0\BotyObchodASP.pdb
+C:\Users\rusla\Desktop\BotyObchodASP\BotyObchodASP\obj\Debug\net6.0\BotyObchodASP.genruntimeconfig.cache
+C:\Users\rusla\Desktop\BotyObchodASP\BotyObchodASP\obj\Debug\net6.0\ref\BotyObchodASP.dll
+C:\Users\rusla\Desktop\BotyObchodASP\BotyObchodASP\obj\Debug\net6.0\scopedcss\Views\Home\Index.cshtml.rz.scp.css
+C:\Users\rusla\Desktop\BotyObchodASP\BotyObchodASP\obj\Debug\net6.0\scopedcss\Views\Product\Index.cshtml.rz.scp.css
+C:\Users\rusla\Desktop\BotyObchodASP\BotyObchodASP\bin\Debug\net6.0\Google.Protobuf.dll
+C:\Users\rusla\Desktop\BotyObchodASP\BotyObchodASP\bin\Debug\net6.0\K4os.Compression.LZ4.dll
+C:\Users\rusla\Desktop\BotyObchodASP\BotyObchodASP\bin\Debug\net6.0\K4os.Compression.LZ4.Streams.dll
+C:\Users\rusla\Desktop\BotyObchodASP\BotyObchodASP\bin\Debug\net6.0\K4os.Hash.xxHash.dll
+C:\Users\rusla\Desktop\BotyObchodASP\BotyObchodASP\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\rusla\Desktop\BotyObchodASP\BotyObchodASP\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\rusla\Desktop\BotyObchodASP\BotyObchodASP\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\rusla\Desktop\BotyObchodASP\BotyObchodASP\bin\Debug\net6.0\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\rusla\Desktop\BotyObchodASP\BotyObchodASP\bin\Debug\net6.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\rusla\Desktop\BotyObchodASP\BotyObchodASP\bin\Debug\net6.0\MySql.Data.dll
+C:\Users\rusla\Desktop\BotyObchodASP\BotyObchodASP\bin\Debug\net6.0\ZstdNet.dll
+C:\Users\rusla\Desktop\BotyObchodASP\BotyObchodASP\bin\Debug\net6.0\MySql.EntityFrameworkCore.dll
+C:\Users\rusla\Desktop\BotyObchodASP\BotyObchodASP\bin\Debug\net6.0\MySqlConnector.dll
+C:\Users\rusla\Desktop\BotyObchodASP\BotyObchodASP\bin\Debug\net6.0\Pomelo.EntityFrameworkCore.MySql.dll
+C:\Users\rusla\Desktop\BotyObchodASP\BotyObchodASP\bin\Debug\net6.0\BouncyCastle.Crypto.dll
+C:\Users\rusla\Desktop\BotyObchodASP\BotyObchodASP\bin\Debug\net6.0\System.Configuration.ConfigurationManager.dll
+C:\Users\rusla\Desktop\BotyObchodASP\BotyObchodASP\bin\Debug\net6.0\System.Drawing.Common.dll
+C:\Users\rusla\Desktop\BotyObchodASP\BotyObchodASP\bin\Debug\net6.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\rusla\Desktop\BotyObchodASP\BotyObchodASP\bin\Debug\net6.0\System.Security.Permissions.dll
+C:\Users\rusla\Desktop\BotyObchodASP\BotyObchodASP\bin\Debug\net6.0\System.Windows.Extensions.dll
+C:\Users\rusla\Desktop\BotyObchodASP\BotyObchodASP\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\rusla\Desktop\BotyObchodASP\BotyObchodASP\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
+C:\Users\rusla\Desktop\BotyObchodASP\BotyObchodASP\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
+C:\Users\rusla\Desktop\BotyObchodASP\BotyObchodASP\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\rusla\Desktop\BotyObchodASP\BotyObchodASP\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
+C:\Users\rusla\Desktop\BotyObchodASP\BotyObchodASP\obj\Debug\net6.0\BotyObchodASP.csproj.CopyComplete
+C:\Users\rusla\Desktop\BotyObchodASP\BotyObchodASP\bin\Debug\net6.0\Humanizer.dll
+C:\Users\rusla\Desktop\BotyObchodASP\BotyObchodASP\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\rusla\Desktop\BotyObchodASP\BotyObchodASP\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\rusla\Desktop\BotyObchodASP\BotyObchodASP\obj\Debug\net6.0\scopedcss\Views\Admin\Index.cshtml.rz.scp.css
+C:\Users\rusla\Desktop\BotyObchodASP\BotyObchodASP\obj\Debug\net6.0\scopedcss\Views\Cart\Index.cshtml.rz.scp.css
+C:\Users\rusla\Desktop\BotyObchodASP\BotyObchodASP\obj\Debug\net6.0\scopedcss\Views\Shared\Components\Product\Default.cshtml.rz.scp.css
+C:\Users\rusla\Desktop\BotyObchodASP\BotyObchodASP\obj\Debug\net6.0\scopedcss\Views\Shared\_LayoutLogin.cshtml.rz.scp.css
+C:\Users\rusla\Desktop\BotyObchodASP\BotyObchodASP\bin\Debug\net6.0\BCrypt.Net-Next.dll
+C:\Users\rusla\Desktop\BotyObchodASP\BotyObchodASP\bin\Debug\net6.0\JWT.dll
+C:\Users\rusla\Desktop\BotyObchodASP\BotyObchodASP\bin\Debug\net6.0\Newtonsoft.Json.dll
+C:\Users\rusla\Desktop\BotyObchodASP\BotyObchodASP\bin\Debug\net6.0\System.Text.Json.dll
+C:\Users\rusla\Desktop\BotyObchodASP\BotyObchodASP\obj\Debug\net6.0\scopedcss\Views\Showall\Index.cshtml.rz.scp.css
+C:\Users\rusla\Desktop\BotyObchodASP\BotyObchodASP\obj\Debug\net6.0\scopedcss\Views\Cart\Delivery.cshtml.rz.scp.css
+C:\Users\rusla\Desktop\BotyObchodASP\BotyObchodASP\obj\Debug\net6.0\scopedcss\Views\Cart\Payment.cshtml.rz.scp.css
+C:\Users\rusla\Desktop\BotyObchodASP\BotyObchodASP\obj\Debug\net6.0\scopedcss\Views\Cart\Customer.cshtml.rz.scp.css
+C:\Users\rusla\Desktop\BotyObchodASP\BotyObchodASP\obj\Debug\net6.0\scopedcss\Views\Cart\Summary.cshtml.rz.scp.css
+C:\Users\rusla\Desktop\BotyObchodASP\BotyObchodASP\obj\Debug\net6.0\scopedcss\Views\Cart\confirmation.cshtml.rz.scp.css
+C:\Users\Ruslana Zubareva\Desktop\BotyObchodASP\BotyObchodASP\bin\Debug\net6.0\appsettings.Development.json
+C:\Users\Ruslana Zubareva\Desktop\BotyObchodASP\BotyObchodASP\bin\Debug\net6.0\appsettings.json
+C:\Users\Ruslana Zubareva\Desktop\BotyObchodASP\BotyObchodASP\bin\Debug\net6.0\BotyObchodASP.staticwebassets.runtime.json
+C:\Users\Ruslana Zubareva\Desktop\BotyObchodASP\BotyObchodASP\bin\Debug\net6.0\BotyObchodASP.exe
+C:\Users\Ruslana Zubareva\Desktop\BotyObchodASP\BotyObchodASP\bin\Debug\net6.0\BotyObchodASP.deps.json
+C:\Users\Ruslana Zubareva\Desktop\BotyObchodASP\BotyObchodASP\bin\Debug\net6.0\BotyObchodASP.runtimeconfig.json
+C:\Users\Ruslana Zubareva\Desktop\BotyObchodASP\BotyObchodASP\bin\Debug\net6.0\BotyObchodASP.dll
+C:\Users\Ruslana Zubareva\Desktop\BotyObchodASP\BotyObchodASP\bin\Debug\net6.0\BotyObchodASP.pdb
+C:\Users\Ruslana Zubareva\Desktop\BotyObchodASP\BotyObchodASP\bin\Debug\net6.0\BCrypt.Net-Next.dll
+C:\Users\Ruslana Zubareva\Desktop\BotyObchodASP\BotyObchodASP\bin\Debug\net6.0\Google.Protobuf.dll
+C:\Users\Ruslana Zubareva\Desktop\BotyObchodASP\BotyObchodASP\bin\Debug\net6.0\Humanizer.dll
+C:\Users\Ruslana Zubareva\Desktop\BotyObchodASP\BotyObchodASP\bin\Debug\net6.0\JWT.dll
+C:\Users\Ruslana Zubareva\Desktop\BotyObchodASP\BotyObchodASP\bin\Debug\net6.0\K4os.Compression.LZ4.dll
+C:\Users\Ruslana Zubareva\Desktop\BotyObchodASP\BotyObchodASP\bin\Debug\net6.0\K4os.Compression.LZ4.Streams.dll
+C:\Users\Ruslana Zubareva\Desktop\BotyObchodASP\BotyObchodASP\bin\Debug\net6.0\K4os.Hash.xxHash.dll
+C:\Users\Ruslana Zubareva\Desktop\BotyObchodASP\BotyObchodASP\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\Ruslana Zubareva\Desktop\BotyObchodASP\BotyObchodASP\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\Ruslana Zubareva\Desktop\BotyObchodASP\BotyObchodASP\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\Ruslana Zubareva\Desktop\BotyObchodASP\BotyObchodASP\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\Ruslana Zubareva\Desktop\BotyObchodASP\BotyObchodASP\bin\Debug\net6.0\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\Ruslana Zubareva\Desktop\BotyObchodASP\BotyObchodASP\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\Ruslana Zubareva\Desktop\BotyObchodASP\BotyObchodASP\bin\Debug\net6.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\Ruslana Zubareva\Desktop\BotyObchodASP\BotyObchodASP\bin\Debug\net6.0\MySql.Data.dll
+C:\Users\Ruslana Zubareva\Desktop\BotyObchodASP\BotyObchodASP\bin\Debug\net6.0\ZstdNet.dll
+C:\Users\Ruslana Zubareva\Desktop\BotyObchodASP\BotyObchodASP\bin\Debug\net6.0\MySql.EntityFrameworkCore.dll
+C:\Users\Ruslana Zubareva\Desktop\BotyObchodASP\BotyObchodASP\bin\Debug\net6.0\MySqlConnector.dll
+C:\Users\Ruslana Zubareva\Desktop\BotyObchodASP\BotyObchodASP\bin\Debug\net6.0\Newtonsoft.Json.dll
+C:\Users\Ruslana Zubareva\Desktop\BotyObchodASP\BotyObchodASP\bin\Debug\net6.0\Pomelo.EntityFrameworkCore.MySql.dll
+C:\Users\Ruslana Zubareva\Desktop\BotyObchodASP\BotyObchodASP\bin\Debug\net6.0\BouncyCastle.Crypto.dll
+C:\Users\Ruslana Zubareva\Desktop\BotyObchodASP\BotyObchodASP\bin\Debug\net6.0\System.Configuration.ConfigurationManager.dll
+C:\Users\Ruslana Zubareva\Desktop\BotyObchodASP\BotyObchodASP\bin\Debug\net6.0\System.Drawing.Common.dll
+C:\Users\Ruslana Zubareva\Desktop\BotyObchodASP\BotyObchodASP\bin\Debug\net6.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\Ruslana Zubareva\Desktop\BotyObchodASP\BotyObchodASP\bin\Debug\net6.0\System.Security.Permissions.dll
+C:\Users\Ruslana Zubareva\Desktop\BotyObchodASP\BotyObchodASP\bin\Debug\net6.0\System.Text.Json.dll
+C:\Users\Ruslana Zubareva\Desktop\BotyObchodASP\BotyObchodASP\bin\Debug\net6.0\System.Windows.Extensions.dll
+C:\Users\Ruslana Zubareva\Desktop\BotyObchodASP\BotyObchodASP\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\Ruslana Zubareva\Desktop\BotyObchodASP\BotyObchodASP\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
+C:\Users\Ruslana Zubareva\Desktop\BotyObchodASP\BotyObchodASP\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
+C:\Users\Ruslana Zubareva\Desktop\BotyObchodASP\BotyObchodASP\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\Ruslana Zubareva\Desktop\BotyObchodASP\BotyObchodASP\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
+C:\Users\Ruslana Zubareva\Desktop\BotyObchodASP\BotyObchodASP\obj\Debug\net6.0\BotyObchodASP.csproj.AssemblyReference.cache
+C:\Users\Ruslana Zubareva\Desktop\BotyObchodASP\BotyObchodASP\obj\Debug\net6.0\BotyObchodASP.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Ruslana Zubareva\Desktop\BotyObchodASP\BotyObchodASP\obj\Debug\net6.0\BotyObchodASP.AssemblyInfoInputs.cache
+C:\Users\Ruslana Zubareva\Desktop\BotyObchodASP\BotyObchodASP\obj\Debug\net6.0\BotyObchodASP.AssemblyInfo.cs
+C:\Users\Ruslana Zubareva\Desktop\BotyObchodASP\BotyObchodASP\obj\Debug\net6.0\BotyObchodASP.csproj.CoreCompileInputs.cache
+C:\Users\Ruslana Zubareva\Desktop\BotyObchodASP\BotyObchodASP\obj\Debug\net6.0\BotyObchodASP.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Ruslana Zubareva\Desktop\BotyObchodASP\BotyObchodASP\obj\Debug\net6.0\BotyObchodASP.RazorAssemblyInfo.cache
+C:\Users\Ruslana Zubareva\Desktop\BotyObchodASP\BotyObchodASP\obj\Debug\net6.0\BotyObchodASP.RazorAssemblyInfo.cs
+C:\Users\Ruslana Zubareva\Desktop\BotyObchodASP\BotyObchodASP\obj\Debug\net6.0\staticwebassets.build.json
+C:\Users\Ruslana Zubareva\Desktop\BotyObchodASP\BotyObchodASP\obj\Debug\net6.0\staticwebassets.development.json
+C:\Users\Ruslana Zubareva\Desktop\BotyObchodASP\BotyObchodASP\obj\Debug\net6.0\scopedcss\Views\Admin\Index.cshtml.rz.scp.css
+C:\Users\Ruslana Zubareva\Desktop\BotyObchodASP\BotyObchodASP\obj\Debug\net6.0\scopedcss\Views\Cart\confirmation.cshtml.rz.scp.css
+C:\Users\Ruslana Zubareva\Desktop\BotyObchodASP\BotyObchodASP\obj\Debug\net6.0\scopedcss\Views\Cart\Customer.cshtml.rz.scp.css
+C:\Users\Ruslana Zubareva\Desktop\BotyObchodASP\BotyObchodASP\obj\Debug\net6.0\scopedcss\Views\Cart\Delivery.cshtml.rz.scp.css
+C:\Users\Ruslana Zubareva\Desktop\BotyObchodASP\BotyObchodASP\obj\Debug\net6.0\scopedcss\Views\Cart\Index.cshtml.rz.scp.css
+C:\Users\Ruslana Zubareva\Desktop\BotyObchodASP\BotyObchodASP\obj\Debug\net6.0\scopedcss\Views\Cart\Payment.cshtml.rz.scp.css
+C:\Users\Ruslana Zubareva\Desktop\BotyObchodASP\BotyObchodASP\obj\Debug\net6.0\scopedcss\Views\Cart\Summary.cshtml.rz.scp.css
+C:\Users\Ruslana Zubareva\Desktop\BotyObchodASP\BotyObchodASP\obj\Debug\net6.0\scopedcss\Views\Home\Index.cshtml.rz.scp.css
+C:\Users\Ruslana Zubareva\Desktop\BotyObchodASP\BotyObchodASP\obj\Debug\net6.0\scopedcss\Views\Product\Index.cshtml.rz.scp.css
+C:\Users\Ruslana Zubareva\Desktop\BotyObchodASP\BotyObchodASP\obj\Debug\net6.0\scopedcss\Views\Shared\Components\Product\Default.cshtml.rz.scp.css
+C:\Users\Ruslana Zubareva\Desktop\BotyObchodASP\BotyObchodASP\obj\Debug\net6.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+C:\Users\Ruslana Zubareva\Desktop\BotyObchodASP\BotyObchodASP\obj\Debug\net6.0\scopedcss\Views\Shared\_LayoutLogin.cshtml.rz.scp.css
+C:\Users\Ruslana Zubareva\Desktop\BotyObchodASP\BotyObchodASP\obj\Debug\net6.0\scopedcss\Views\Showall\Index.cshtml.rz.scp.css
+C:\Users\Ruslana Zubareva\Desktop\BotyObchodASP\BotyObchodASP\obj\Debug\net6.0\scopedcss\bundle\BotyObchodASP.styles.css
+C:\Users\Ruslana Zubareva\Desktop\BotyObchodASP\BotyObchodASP\obj\Debug\net6.0\scopedcss\projectbundle\BotyObchodASP.bundle.scp.css
+C:\Users\Ruslana Zubareva\Desktop\BotyObchodASP\BotyObchodASP\obj\Debug\net6.0\BotyObchodASP.csproj.CopyComplete
+C:\Users\Ruslana Zubareva\Desktop\BotyObchodASP\BotyObchodASP\obj\Debug\net6.0\BotyObchodASP.dll
+C:\Users\Ruslana Zubareva\Desktop\BotyObchodASP\BotyObchodASP\obj\Debug\net6.0\refint\BotyObchodASP.dll
+C:\Users\Ruslana Zubareva\Desktop\BotyObchodASP\BotyObchodASP\obj\Debug\net6.0\BotyObchodASP.pdb
+C:\Users\Ruslana Zubareva\Desktop\BotyObchodASP\BotyObchodASP\obj\Debug\net6.0\BotyObchodASP.genruntimeconfig.cache
+C:\Users\Ruslana Zubareva\Desktop\BotyObchodASP\BotyObchodASP\obj\Debug\net6.0\ref\BotyObchodASP.dll

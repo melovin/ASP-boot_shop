@@ -1,0 +1,196 @@
+﻿@{
+    ViewData["Title"] = "Edit";
+}
+@{
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+@model Editmodel
+<div class="d-flex">
+    <aside>
+        <div class="d-flex flex-column flex-shrink-0 p-3 text-bg-dark" style="width: 280px;height: 100vh;">
+            <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+                <svg class="bi pe-none me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
+                <span class="fs-4">Admin</span>
+            </a>
+            <hr>
+            <ul class="nav nav-pills flex-column mb-auto">
+                @*<li class="nav-item">
+                <a href="#" class="nav-link active" aria-current="page">
+                <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#home"></use></svg>
+                Dashboard
+                </a>
+                </li>*@
+                <li>
+                    <a asp-action="Index" class="nav-link text-white">
+                        <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#speedometer2"></use></svg>
+                        Objednávky
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="nav-link text-white active">
+                        <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#table"></use></svg>
+                        Produkty
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="nav-link text-white">
+                        <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#grid"></use></svg>
+                        Kategorie
+                    </a>
+                </li>
+                <li>
+                    <a asp-action="Deliverypayment" class="nav-link text-white">
+                        <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#people-circle"></use></svg>
+                        Doprava a platba
+                    </a>
+                </li>
+                <li>
+                    <a asp-action="Logout" asp-controller="Login" class="nav-link text-white">
+                        <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#people-circle"></use></svg>
+                        Odhlásit se
+                    </a>
+                </li>
+            </ul>
+            <hr>
+            <div class="dropdown">
+                <a href="#" class="d-flex align-items-center text-white text-decoration-none dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                    <img src="https://github.com/mdo.png" alt="" width="32" height="32" class="rounded-circle me-2">
+                    <strong>Admin</strong>
+                </a>
+                <ul class="dropdown-menu dropdown-menu-dark text-small shadow">
+                    <li><a class="dropdown-item" href="#">New project...</a></li>
+                    <li><a class="dropdown-item" href="#">Settings</a></li>
+                    <li><a class="dropdown-item" href="#">Profile</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#">Sign out</a></li>
+                </ul>
+            </div>
+        </div>
+    </aside>
+    <div class="content justify-content-evenly mx-auto" style="width:80%">
+        <h1 class="text-center mb-5">Edit produktu</h1>
+        <div class="wrapper">
+            <div class="w-100 mb-5">
+                <form asp-action="Changes">
+                    @Html.HiddenFor(x => x.Product.Id)
+                    <div class="">
+                    <div class="mb-3">
+                      <label for="exampleFormControlInput1" class="form-label">Název produktu</label>
+                      <input asp-for="Product.Name" type="text" class="form-control" id="exampleFormControlInput1" placeholder="Název produktu...">
+                    </div>
+                    <div class="mb-3">
+                      <label for="exampleFormControlTextarea1" class="form-label">Popis</label>
+                            <textarea asp-for="Product.Description" class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Popis produktu..."></textarea>
+                    </div>
+                    <div class="mb-3 h-50">
+                        <label for="exampleFormControlTextarea1" class="form-label">Detailní popis</label>
+                        <textarea asp-for="Product.DetailedDescription" rows="5" class="form-control" id="exampleFormControlTextarea1"placeholder="Detailní popis produktu..."></textarea>
+                    </div>
+                    <div class="d-flex align-content-center justify-content-evenly">
+                            <div class="mb-3 me-5">
+                                <label for="exampleFormControlInput1" class="form-label">Materiál produktu</label>
+                                <input asp-for="Product.Material" type="text" class="form-control" id="exampleFormControlInput1" placeholder="Materiál...">
+                            </div>
+                            <div class="mb-3 me-5">
+                                <label for="exampleFormControlInput1" class="form-label">Určení produktu</label>
+                                <input asp-for="Product.Type" type="text" class="form-control" id="exampleFormControlInput1" placeholder="Určení...">
+                            </div>
+                            <div class="mb-3 me-5">
+                                <label for="exampleFormControlInput1" class="form-label">Aktivní</label>
+                                <input asp-for="Product.Active" type="checkbox" class="" id="exampleFormControlInput1">
+                            </div>
+                            @*@for (int i = 0; i < ViewBag.Cats.Count; i++)
+                            {
+                                <div class="mb-3 me-5">
+                                    <label for="exampleFormControlInput1" class="form-label">Aktivní</label>
+                                    <input type="checkbox" class="" id="exampleFormControlInput1">
+                                </div>
+                            }*@
+                            <div class="mb-3">
+                                <label for="formFileMultiple" class="form-label">Fotografie produktu</label>
+                                <input  class="form-control" type="file" id="fotky" multiple>
+                            </div>
+
+                            
+                            @{
+                                int k = 0; 
+                            }
+                            @foreach(TbPicture item in Model.Product.TbPictures)
+                            {
+                                @Html.HiddenFor(x => x.Product.TbPictures.ElementAt(k).Id)
+                                @Html.HiddenFor(x => x.Product.TbPictures.ElementAt(k).IdProduct)
+                                @Html.HiddenFor(x => x.Product.TbPictures.ElementAt(k).IdStock)
+                                @Html.HiddenFor(x => x.Product.TbPictures.ElementAt(k).PrimaryImg)
+                                <img style="width:70px" src="@item.Path" />
+                                {
+                                    k = k+1; 
+                                }
+                            }
+                    </div>     
+                    @for(int i = 0; i < Model.Stocks.Count; i++)
+                    {
+                        @Html.HiddenFor(x => x.Stocks[i].Id)
+                        @Html.HiddenFor(x => x.Stocks[i].IdProduct)
+                        @Html.HiddenFor(x => x.Stocks[i].IdColor)
+                        <div class="card w-100 mb-5">
+                            <div class="card-header">
+                                @Model.Stocks[i].Code
+                            </div>
+                            <div class="card-body">
+                                <div>
+                                    <div class="mb-3 me-5 d-flex">
+                                        <div class="me-3">
+                                            <label for="exampleFormControlInput1" class="form-label">Kod produktu</label>
+                                            <input asp-for="Stocks[i].Code" type="text" class="form-control" id="exampleFormControlInput1" placeholder="Kod...">
+                                        </div>
+                                        <div class="me-3">
+                                            <label for="exampleFormControlInput1" class="form-label">Barva</label>
+                                            <input asp-for="Stocks[i].IdColorNavigation.HexCode" type="color" class="form-control" id="exampleFormControlInput1" placeholder="Barva...">
+                                        </div>
+                                        <div class="me-3">
+                                            <label for="exampleFormControlInput1" class="form-label">Název barvy</label>
+                                            <input asp-for="Stocks[i].IdColorNavigation.Name" type="text" class="form-control" id="exampleFormControlInput1" placeholder="Barva název...">
+                                        </div>
+                                        <div class="me-3">
+                                            <label for="exampleFormControlInput1" class="form-label">Velikost</label>
+                                            <input asp-for="Stocks[i].Size" type="number" class="form-control" id="exampleFormControlInput1" placeholder="Velikost...">
+                                        </div>
+                                        <div class="me-3">
+                                            <label for="exampleFormControlInput1" class="form-label">Množství</label>
+                                            <input asp-for="Stocks[i].Quantity" type="number" class="form-control" id="exampleFormControlInput1" placeholder="Množství...">
+                                        </div>
+                                        <div class="me-3">
+                                            <label for="exampleFormControlInput1" class="form-label">Cena</label>
+                                            <input asp-for="Stocks[i].Price" type="text" class="form-control" id="exampleFormControlInput1" placeholder="Cena...Kč">
+                                        </div>
+                                        <div class="me-3">
+                                            <label for="exampleFormControlInput1" class="form-label">Sleva</label>
+                                            <input asp-for="Stocks[i].Discount" type="number" class="form-control" id="exampleFormControlInput1" placeholder="Sleva...%">
+                                        </div>
+                                        <div class="me-3">
+                                            <label for="exampleFormControlInput1" class="form-label">DPH</label>
+                                            <input asp-for="Stocks[i].Tax" type="number" class="form-control" id="exampleFormControlInput1" placeholder="DPH...%">
+                                        </div>
+                                        <div class="me-3">
+                                            <label for="exampleFormControlInput1" class="form-label">Aktivní</label>
+                                            <input asp-for="Stocks[i].Active" type="checkbox" class="" id="exampleFormControlInput1">
+                                        </div>
+                                    </div>
+                                </div>
+                                    <a asp-action="Variantremove" asp-route-produktid="@Model.Product.Id" asp-route-variantid="@Model.Stocks[i].Id" class="btn btn-danger" type="submit">Odebrat variantu</a>
+                            </div>
+                        </div>
+                    }
+                        <div class="d-flex justify-content-end">
+                            <a asp-action="Variantadd" asp-route-produktid="@Model.Product.Id" class="btn btn-secondary">Přidat variantu</a>
+                            <button  class="btn btn-primary ms-2" type="submit">Save changes</button>
+                        </div>
+                    
+                
+                </form>   
+               
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

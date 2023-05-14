@@ -1,0 +1,112 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = BotyObchodASP
+build_property.RootNamespace = BotyObchodASP
+build_property.ProjectDir = C:\Users\Ruslana Zubareva\Desktop\BotyObchodASP\BotyObchodASP\
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\Ruslana Zubareva\Desktop\BotyObchodASP\BotyObchodASP
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/Ruslana Zubareva/Desktop/BotyObchodASP/BotyObchodASP/Views/Admin/Deliverypayment.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cRGVsaXZlcnlwYXltZW50LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Ruslana Zubareva/Desktop/BotyObchodASP/BotyObchodASP/Views/Admin/Deliverypaymentedit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cRGVsaXZlcnlwYXltZW50ZWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Ruslana Zubareva/Desktop/BotyObchodASP/BotyObchodASP/Views/Admin/Paymentedit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cUGF5bWVudGVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Ruslana Zubareva/Desktop/BotyObchodASP/BotyObchodASP/Views/Admin/Produktedit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cUHJvZHVrdGVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Ruslana Zubareva/Desktop/BotyObchodASP/BotyObchodASP/Views/Admin/Produkty.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cUHJvZHVrdHkuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Ruslana Zubareva/Desktop/BotyObchodASP/BotyObchodASP/Views/Login/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9naW5cSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Ruslana Zubareva/Desktop/BotyObchodASP/BotyObchodASP/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Ruslana Zubareva/Desktop/BotyObchodASP/BotyObchodASP/Views/Shared/_LayoutAdmin.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXRBZG1pbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Ruslana Zubareva/Desktop/BotyObchodASP/BotyObchodASP/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Ruslana Zubareva/Desktop/BotyObchodASP/BotyObchodASP/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Ruslana Zubareva/Desktop/BotyObchodASP/BotyObchodASP/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Ruslana Zubareva/Desktop/BotyObchodASP/BotyObchodASP/Views/Admin/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-klau7ty479
+
+[C:/Users/Ruslana Zubareva/Desktop/BotyObchodASP/BotyObchodASP/Views/Cart/Confirmation.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FydFxDb25maXJtYXRpb24uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-nwctfsmeiq
+
+[C:/Users/Ruslana Zubareva/Desktop/BotyObchodASP/BotyObchodASP/Views/Cart/Customer.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FydFxDdXN0b21lci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = b-0rij3xrz2d
+
+[C:/Users/Ruslana Zubareva/Desktop/BotyObchodASP/BotyObchodASP/Views/Cart/Delivery.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FydFxEZWxpdmVyeS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = b-w30eu4kgxk
+
+[C:/Users/Ruslana Zubareva/Desktop/BotyObchodASP/BotyObchodASP/Views/Cart/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FydFxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = b-sdobj1wq75
+
+[C:/Users/Ruslana Zubareva/Desktop/BotyObchodASP/BotyObchodASP/Views/Cart/Payment.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FydFxQYXltZW50LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = b-3v8ed8c96e
+
+[C:/Users/Ruslana Zubareva/Desktop/BotyObchodASP/BotyObchodASP/Views/Cart/Summary.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FydFxTdW1tYXJ5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = b-koidy1qrpy
+
+[C:/Users/Ruslana Zubareva/Desktop/BotyObchodASP/BotyObchodASP/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = b-tjj7axnoen
+
+[C:/Users/Ruslana Zubareva/Desktop/BotyObchodASP/BotyObchodASP/Views/Product/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdFxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = b-la5m5rel04
+
+[C:/Users/Ruslana Zubareva/Desktop/BotyObchodASP/BotyObchodASP/Views/Shared/Components/Product/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcUHJvZHVjdFxEZWZhdWx0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = b-3n7levm1sg
+
+[C:/Users/Ruslana Zubareva/Desktop/BotyObchodASP/BotyObchodASP/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-4yhopp7oyi
+
+[C:/Users/Ruslana Zubareva/Desktop/BotyObchodASP/BotyObchodASP/Views/Shared/_LayoutLogin.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXRMb2dpbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = b-9ddk89tucy
+
+[C:/Users/Ruslana Zubareva/Desktop/BotyObchodASP/BotyObchodASP/Views/Showall/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hvd2FsbFxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = b-cl1xkvowtf

@@ -1,0 +1,139 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - BotyObchodASP</title>
+@*    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />*@
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/BotyObchodASP.styles.css" asp-append-version="true" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="FirstLine">
+            <div class="wrapper">
+                <div class="left">
+                    <a href="tel:+420777666555" class="tel">
+                        <img class="notMobile" src="~/img/8.svg" alt="phone icon">
+                        <div class="tel">
+                            <p class="predvolba notMobile">+420</p>
+                            <p> 777 666 555</p>
+                        </div>
+                    </a>
+                    <p class="divider"> | </p>
+                    <a class="mail" href="mailto:info@nejlepsiboty.cz">info@nejlepsiboty.cz</a>
+                </div>
+                <div class="right">
+                    <a asp-controller="Admin" asp-action="Index"  class="rightLink">
+                        <img src="~/img/profile-user.svg" alt="user_profile_photo">
+                        <p class="notMobile">Přihlásit se</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="secondLine">
+            <div class="logo">
+                <a asp-action="Index" asp-controller="Home"><img src="~/img/Group 4.png" alt="logo"></a>
+            </div>
+            <div class="right">
+                <form action="search.php">
+                    <input class="notMobile" name="search" type="text" placeholder="Vyhledat zboží...">
+                    <img class="notDesktop" src="~/img/loupe.svg">
+                </form>
+                <a asp-action="Index" asp-controller="Cart"><img src="~/img/cart.svg" alt="cart"></a>
+                <a href=""><img src="~/img/heart.svg" alt="heart"></a>
+            </div>
+        </div>
+        <nav>
+            <ul>
+                <li>
+                    <a class="boys" href="#">
+                        Chlapecké
+                        <img src="~/img/Group%20169.svg" alt="boy_figure">
+                    </a>
+                </li>
+                <li>
+                    <a class="girls" href="#">
+                        Dívčí
+                        <img src="~/img/Group%20171.svg" alt="girl_figure">
+                    </a>
+                </li>
+                <li>
+                    <a class="acc" href="#">Doplňky</a>
+                </li>
+                <li>
+                    <a class="other" href="#">Ostatní</a>
+                </li>
+                <li class="notMobile">
+                    <a href="#">Kontakt</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main role="main">
+        @RenderBody()
+    </main>
+    <footer>
+        <div class="left">
+            <div class="aboutUs">
+                <h3>O nás</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam aspernatur atque deleniti dolor doloribus error exercitationem explicabo facilis ipsa laborum libero maiores maxime nemo nisi quasi quis saepe sed, soluta!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam aspernatur atque deleniti dolor doloribus error exercitationem explicabo facilis ipsa laborum libero maiores maxime nemo nisi quasi quis saepe sed, soluta!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam aspernatur atque deleniti dolor doloribus error</p>
+                <a asp-action="Index" asp-controller="Home"><img src="~/img/logo_white.png" alt="logo"></a>
+            </div>
+            <div class="offer">
+                <h3>Naše nabídka</h3>
+                <div class="cat">
+                    <div class="girls">
+                        <a class="main" href="#">Dívčí</a>
+                        <ul class="c">
+                            @foreach(TbCategory item in (ViewBag.Categories as List<TbCategory>).Where(x => x.ParentId == 1))
+                            {
+                                <a href="#">
+                                <li>@item.Name</li></a>
+                            }
+                        </ul>
+                    </div>
+                    <div class="boys">
+                        <a class="main" href="#">Chlapecké</a>
+                        <ul class="c">
+                            @foreach (TbCategory item in (ViewBag.Categories as List<TbCategory>).Where(x => x.ParentId == 2))
+                            {
+                                <a href="#">
+                                <li>@item.Name</li></a>
+                            }
+                        </ul>
+                    </div>                  
+                </div>
+            </div>
+        </div>
+        <div class="right">
+            <h3>Kontaktujte nás</h3>
+            <div class="content">
+                <a href="mailto:info@nejlepsiboty.cz" class="contact_mail">
+                    <img src="~/img/6.svg" alt="mail icon">
+                    <p>info@nejlepsiboty.cz</p>
+                </a>
+                <a href="tel:+420777666555" class="contact_tel">
+                    <img src="~/img/8.svg" alt="phone icon">
+                    <div class="tel">
+                        <p> +420 777 666 555</p>
+                    </div>
+                </a>
+                <div class="icons">
+                    <a target="_blank" href="https://www.facebook.com/"><img src="~/img/facebook.svg" alt="facebook"></a>
+                    <a target="_blank" href="https://www.instagram.com/"><img src="~/img/Group%20153.svg" alt="instagram"></a>
+                    <a target="_blank" href="https://twitter.com/?lang=cs"><img src="~/img/twitter.svg" alt="twitter"></a>
+                </div>
+                <a class="address" target="_blank" href="http://maps.google.com/?q=Litvínovská 600, Praha 9, 190 00"><address>Litvínovská 600, Praha 9, 190 00</address></a>
+            </div>
+        </div>
+    </footer>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

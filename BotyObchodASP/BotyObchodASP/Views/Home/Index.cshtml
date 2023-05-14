@@ -1,0 +1,82 @@
+﻿@{
+    ViewData["Title"] = "Home";
+}
+
+<div class="slider notMobile">
+    <div class="top">
+        <div></div>
+        <div class="text">
+            <p class="first">nová dívčí kolekce <br> šetrná k dětským nohám</p>
+            <p class="second">nejen do města, <br> ale i do přírody</p>
+            <a asp-controller="Showall" asp-action="Index"><button>zobrazit produkty</button></a>
+        </div>
+    </div><div class="bootom">
+        <label class="radioB">
+            <input checked name="slider" type="radio">
+            <span class="checked"></span>
+        </label>
+        <label class="radioB">
+            <input name="slider" type="radio">
+            <span class="checked"></span>
+        </label>
+        <label class="radioB">
+            <input name="slider" type="radio">
+            <span class="checked"></span>
+        </label>
+    </div>
+
+</div>
+<div class="categories">
+    <div class="first">
+        <a href="#">klučičí <br> boty</a>
+    </div>
+    <div class="second">
+        <a href="#">dívčí boty</a>
+    </div>
+    <div class="third">
+        <a href="">jak správně <br> vybrat?</a>
+    </div>
+</div>
+<div class="middle_divider">
+    <hr>
+    <img src="img/Group%20295.svg" alt="foot">
+    <hr>
+</div>
+<div class="products">
+    <p class="header">Nejnovější kousky <span>v naší nabídce</span></p>
+    <div class="wrapper">
+    @foreach (TbProduct item in ViewBag.Products) //testiiiik :)
+    {
+    @*@item.Username*@
+        <vc:product product="item"></vc:product>
+    }
+    </div>
+    <a asp-controller="Showall" asp-action="Index"><button>zobrazit celou nabídku</button></a>
+</div>
+<div class="middle_divider">
+    <hr>
+    <img src="img/Group%20295.svg" alt="foot">
+    <hr>
+</div>
+<div class="circles">
+    <div class="item">
+        <div class="img img1"></div>
+        <a href="#">Vše máme skladem</a>
+    </div>
+    <div class="item">
+        <div class="img img2"></div>
+        <a href="#">Doprava zdarma</a>
+    </div>
+    <div class="item">
+        <div class="img img3"></div>
+        <a href="#">Jak měřit velikosti</a>
+    </div>
+</div>
+<div class="emailSection">
+    <h2>Nezmeškejte nové a výhodné akce</h2>
+    <p>Zadejte svůj e-mail a obratem vám zašleme PDF s inspirací zdarma.</p>
+    <form action="newsletters.php">
+        <input name="main" required type="email" placeholder="Zadejte svůj email...">
+        <button type="submit">přihlásit</button>
+    </form>
+</div>

@@ -1,0 +1,36 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Views\NováSložka - Kopie\**" />
+    <Compile Remove="Views\NováSložka\**" />
+    <Content Remove="Views\NováSložka - Kopie\**" />
+    <Content Remove="Views\NováSložka\**" />
+    <EmbeddedResource Remove="Views\NováSložka - Kopie\**" />
+    <EmbeddedResource Remove="Views\NováSložka\**" />
+    <None Remove="Views\NováSložka - Kopie\**" />
+    <None Remove="Views\NováSložka\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Remove="Views\Admin\Index1.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="BCrypt.Net-Next" Version="4.0.3" />
+    <PackageReference Include="JWT" Version="10.0.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="6.0.12">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="MySql.EntityFrameworkCore" Version="6.0.7" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.2" />
+    <PackageReference Include="Pomelo.EntityFrameworkCore.MySql" Version="6.0.2" />
+  </ItemGroup>
+
+</Project>

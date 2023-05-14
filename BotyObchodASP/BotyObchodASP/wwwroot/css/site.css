@@ -1,0 +1,561 @@
+/*html {
+  font-size: 14px;
+}
+@media (min-width: 768px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+}*/
+.notDesktop {
+    display: none !important;
+}
+.BtnPrimary {
+    border: none;
+    background: #c7232f;
+    color: white;
+    padding: 1rem 2rem;
+    font-size: 25px;
+    width: 10rem;
+    cursor: pointer;
+    /*    margin-left:auto;
+    margin-right:auto;*/
+}
+.Btnsecondary {
+    border: none;
+    background: white;
+    color: #c7232f;
+    padding: 1rem 2rem;
+    font-size: 25px;
+    width: 10rem;
+    cursor: pointer;
+    outline: solid 1px #c7232f;
+    /*    margin-left:auto;
+    margin-right:auto;*/
+}
+body {
+    /*margin-bottom: 60px;*/
+    margin: 0;
+    padding: 0;
+    font-family: 'libre franklin';
+}
+.youMayLike .products .product {
+    border: solid #b9b9b9 1px;
+}
+
+    .youMayLike .products .product .product_photo {
+        height: 15rem;
+    }
+
+.youMayLike .products .price {
+    display: flex;
+    margin-left: 1rem;
+    gap: 1rem;
+    justify-content: space-between;
+}
+
+    .youMayLike .products .price .actual_price {
+        display: flex;
+        gap: 1rem;
+        align-items: center;
+    }
+
+        .youMayLike .products .price .actual_price .current {
+            color: #c7232f;
+            font-weight: bold;
+        }
+
+        .youMayLike .products .price .actual_price .old {
+            color: #ababab;
+        }
+
+.youMayLike .products .desc {
+    margin-left: 1rem;
+    width: 80%;
+    text-align: left;
+}
+
+.hidden_cart {
+    display: none;
+}
+
+.youMayLike .products .product:hover .hidden_cart {
+    display: block;
+    margin-right: 1rem;
+}
+
+.youMayLike .products {
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr 2fr;
+    gap: 3rem;
+}
+
+    .youMayLike .products .product:hover {
+        outline: solid #c7232f 2px;
+    }
+
+.circles {
+    display: flex;
+    width: 90%;
+}
+
+    .circles .item {
+        display: flex;
+        flex: 1;
+        align-items: center;
+        justify-content: center;
+    }
+
+.products a {
+text-decoration: none;
+color: black;
+}
+
+.products a:hover {
+font-weight: bold;
+}
+.products .header {
+    color: #c7232f;
+    font-size: 30px;
+}
+
+.products span {
+    color: #304068;
+    font-weight: bold;
+}
+body {
+    font-family: 'libre franklin';
+}
+
+.products {
+margin-right: auto;
+margin-left: auto;
+text-align: center;
+}
+
+.products:hover {
+cursor: pointer;
+}
+
+.products .wrapper .product {
+border: solid #b9b9b9 1px;
+}
+
+.products .wrapper .product .product_photo {
+    height: 15rem;
+}
+
+.products .wrapper .price {
+display: flex;
+margin-left: 1rem;
+gap: 1rem;
+justify-content: space-between;
+}
+
+.products .wrapper .price .actual_price {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.products .wrapper .price .actual_price .current {
+color: #c7232f;
+font-weight: bold;
+}
+
+.products .wrapper .price .actual_price .old {
+color: #ababab;
+}
+
+.products .product .desc {
+    margin-left: 1rem;
+    width: 80%;
+    text-align: left;
+    color: #304068;
+    font-size: 20px;
+}
+
+.hidden_cart {
+display: none;
+}
+
+.products .wrapper .product:hover .hidden_cart {
+    display: block;
+    margin-right: 1rem;
+}
+
+.products .wrapper .product:hover {
+    outline: solid #c7232f 2px;
+}
+
+.products button {
+    border: none;
+    background: #c7232f;
+    color: white;
+    font-size: 25px;
+    width: 20rem;
+    padding: 1rem;
+    margin-top: 3rem;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: white;
+    color: #c7232f;
+    outline: solid red 1px;
+}
+
+.notDesktop {
+    display: none !important;
+}
+
+@media screen and (max-width:640px) {
+    .products button {
+        width: 18rem;
+    }
+}
+
+    /*---------------HEADER----------------*/
+    .FirstLine {
+    display: flex;
+    align-items: center;
+    height: 4rem;
+    background-color: #304068;
+    }
+
+    .wrapper {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    margin-right: auto;
+    margin-left: auto;
+    align-items: center;
+    }
+
+    .FirstLine .left {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    }
+
+    .FirstLine a.tel {
+    display: flex;
+    flex: 1;
+    }
+
+    .FirstLine a {
+    color: white !important;
+    text-decoration: none;
+    }
+
+    .FirstLine .left img {
+    margin-right: 0.2rem;
+    }
+
+    .FirstLine .left a .tel {
+    display: flex;
+    }
+
+    .FirstLine a .tel p.p#c7232fvolba {
+    margin-right: 0.25rem;
+    }
+
+    .FirstLine .left .divider, nav .mail {
+    display: inline;
+    color: white;
+    }
+
+    .FirstLine .rightLink {
+    display: flex;
+    color: white;
+    align-items: center;
+    }
+
+    .FirstLine .rightLink img {
+    height: 1.5rem;
+    margin-right: 0.6rem;
+    }
+
+    .secondLine {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 1.25rem;
+    }
+
+    .secondLine .right {
+    display: flex;
+    margin-top: 0.6rem;
+    align-items: center;
+    gap: 1rem;
+    }
+
+    .secondLine .right input {
+    background: url("../img/loupe.svg");
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-size: 1.5rem;
+    background-position-x: 0.3rem;
+    padding-left: 2rem;
+    height: 1.9rem;
+    border: solid 1px #b2b2b2;
+    color: #989595;
+    }
+
+    .secondLine .right input:focus {
+    border: none;
+    outline: #c7232f 1px solid;
+    }
+
+    .secondLine .right img {
+    height: 1.8rem;
+    }
+
+    nav {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    }
+
+    nav ul {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    }
+
+    nav ul li {
+    outline: solid 1px gray;
+    padding: 0.6rem;
+    margin-left: 1px;
+    margin-top: 1px;
+    align-items: center;
+    flex: 1;
+    justify-content: center;
+    display: flex;
+    color: gray;
+    height: 4rem;
+    }
+
+    nav ul li a {
+    text-decoration: none;
+    color: gray;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.3rem;
+    }
+
+    nav ul li a:hover {
+    color: #c7232f;
+    font-weight: bold;
+    }
+
+    nav ul li:hover {
+    outline: solid 1px #c7232f;
+    z-index: 1;
+    }
+
+    .notDesktop {
+    display: none;
+    }
+
+@media screen and (max-width:640px) {
+    .notMobile {
+        display: none !important;
+    }
+
+    .FirstLine .wrapper .left p, .FirstLine .wrapper .left a {
+        font-size: 12px;
+    }
+
+    .notDesktop {
+        display: flex;
+    }
+
+    .secondLine .right {
+        align-items: baseline;
+    }
+
+    nav ul {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+/*---------FOOTER----------*/
+    footer {
+    height: 32rem;
+    display: flex;
+    color: white;
+    }
+
+    footer h3 {
+    font-weight: lighter;
+    font-size: 25px;
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+    }
+
+    footer .left {
+    background-color: #c7232f;
+    flex: 2;
+    display: flex;
+    padding-left: 5%;
+    padding-top: 1rem;
+    }
+
+    footer .left .aboutUs {
+    flex: 1;
+    text-align: justify;
+    }
+
+    footer .left .offer {
+    flex: 2;
+    padding-left: 10rem;
+    }
+
+    footer .right {
+    flex: 1;
+    background-color: #304068;
+    }
+
+    footer .left img {
+    height: 7rem
+    }
+
+    footer .left .offer .cat {
+    display: flex;
+    color: white;
+    }
+
+    footer .left .offer .cat a {
+    color: white;
+    text-decoration: none;
+    }
+
+    footer .left .offer .main {
+    font-weight: bold;
+    margin: 0;
+    }
+
+    footer .left .offer .cat ul.c {
+    list-style-type: circle;
+    }
+
+    footer .left .offer .cat ul li {
+    padding: 0.2rem;
+    }
+
+    footer .right {
+    padding-left: 3rem;
+    padding-top: 1rem;
+    }
+
+    footer .right .content .contact_mail {
+    display: flex;
+    gap: 1rem;
+    color: white;
+    text-decoration: none;
+    }
+
+    footer .right .content .contact_tel {
+    display: flex;
+    gap: 1rem;
+    color: white;
+    text-decoration: none;
+    }
+
+    footer .right .content .icons {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+    }
+
+    footer .right .content .icons a {
+    display: flex;
+    gap: 1rem;
+    }
+
+    footer .right .content address {
+    margin-top: 2rem;
+    font-style: normal;
+    }
+
+    footer .right .content a.address {
+    color: white;
+    text-decoration: none;
+    }
+
+    @media screen and (max-width:640px) {
+    footer {
+    flex-direction: column;
+    }
+
+    footer .left {
+    flex-direction: column;
+    }
+
+    footer .left .offer {
+    padding-left: 0;
+    }
+
+    footer .left .aboutUs {
+    padding-right: 2rem;
+    }
+}
+
+/*--------EMAIL SECTION-----------*/
+    .emailSection {
+        margin-top: 5rem;
+        background: url("../img/homepage_form.png");
+        height: 25rem;
+        background-repeat: no-repeat;
+        background-position: bottom left;
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .emailSection form {
+        display: flex;
+        align-items: center;
+        margin-top: 1rem;
+    }
+
+    .emailSection input {
+        background: url("../img/mail_darker.svg");
+        background-repeat: no-repeat;
+        background-position-y: center;
+        background-size: 1.5rem;
+        background-position-x: 0.3rem;
+        padding-left: 2rem;
+        border: solid 1px #b2b2b2;
+        width: 15rem;
+        height: 2.5rem;
+        background-color: white;
+    }
+
+    .emailSection form button {
+        height: 2.7rem;
+        background-color: #c7232f;
+        color: white;
+        border: none;
+        padding: 1rem;
+        font-size: 17px;
+        display: flex;
+        align-items: center;
+    }
+
+    .emailSection form button:hover {
+        cursor: pointer;
+    }

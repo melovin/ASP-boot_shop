@@ -1,0 +1,110 @@
+﻿@{
+    ViewData["Title"] = "delivery";
+}
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+<h1>Váš košík</h1>
+<div class="justify-content-center d-flex">
+    <img src="../cart_progress/nav1.svg" />
+</div>
+<div class="wrapper d-flex" style="width: 1400px;">
+    <form name="delivery" style="display: flex;">
+    <div style="margin-right:50px">
+        @for(int i = 0; i < ViewBag.Variants.Count; i++)
+        {
+            <div class="card mb-3" style="width: 500px; margin:10px auto 20px auto;">
+                <div class="d-flex" style="width:1000px">
+                    <div class="col-md-1 me-2">
+                        <img src="@((ViewBag.Products as IEnumerable<TbProduct>).FirstOrDefault(x => x.TbStocks.Contains(ViewBag.Variants[i])).TbPictures.ToList().FirstOrDefault().Path)" class="img-fluid rounded-start h-100" alt="productPhoto">
+                    </div>
+                    <div style="width: 500px;">
+                        <div class="card-body d-flex justify-content-between align-content-center">
+                            <div>
+                                @{
+                                    TbOrderDetail xx = (ViewBag.Quantity as IEnumerable<TbOrderDetail>).FirstOrDefault(x => x.IdStock == ViewBag.Variants[i].Id);
+                                    int q = xx.Quantity;
+                                }
+                                <h2>@((ViewBag.Products as IEnumerable<TbProduct>).FirstOrDefault(x => x.TbStocks.Contains(ViewBag.Variants[i])).Name)</h2>
+                                    <div class="d-flex" style="gap: 40px;">
+                                    <b class="me-4">@ViewBag.Variants[i].IdColorNavigation.Name</b>
+                                    <b>@ViewBag.Variants[i].Size</b>
+                                        <b>Q: @(q)X</b>
+                                    <b>@Math.Round((xx.Price * (100 + xx.Tax) / 100) * (100 - xx.Discount) / 100) Kč</b>
+                                </div>
+                            </div>
+
+@*                            <div>
+                                <h2>Cena bez DPH</h2>
+                                <b>
+                                    @(xx.Price * ((100.0 - xx.Discount) / 100)) Kč
+                                </b>
+                            </div>*@
+                        </div>
+                    </div>
+                </div>
+            </div>
+        }
+        @*<script>
+                function GetId() {
+                    document.getElementById('changeMe').innerText("")
+                }
+        </script>*@
+            <div class="bottom">
+                @if (ViewBag.Variants != null)
+                {
+                    double withTAX = 0;
+                    double withoutTAX = 0;
+                    int i = 0;
+                    @foreach (TbOrderDetail item in ViewBag.Quantity)
+                    {
+                        withTAX += (item.Price * (100 + item.Tax) / 100) * (100 - item.Discount) / 100;
+                        withoutTAX += (item.Price * (100 - item.Discount) / 100);
+
+                    }
+                    {
+                        withTAX = Math.Round(withTAX);
+                        withoutTAX = Math.Round(withoutTAX);
+                        
+                    }
+                    <div class="card mb-3" style="padding:25px">
+                        <div class="row g-0" style="width:300px">
+                            <h3>Mezisoučet</h3>
+                            + Doprava @*<p id="changeMe">0</p> Kč*@
+                            <h4>Celkem bez DPH</h4>
+                            <p>@withoutTAX Kč</p>
+                            <hr>
+                            <h4>Celkem s DPH</h4>
+                            <p>@withTAX Kč</p>
+                        </div>
+                    </div>
+                }
+            </div>
+    </div>
+    <div style="width:1000px">
+        @foreach (TbDelivery item in ViewBag.Deliveries)
+        {
+            <div class="card mb-3" style="width: 1000px; margin:10px auto 20px auto;">
+                <div class="row g-0">
+                    <div class="col-md-1 me-2">
+                        <img src="../icons2/car.svg">
+                    </div>
+                    <div style="width: 700px;">
+                        <div class="card-body d-flex justify-content-between align-content-center">
+                            <h2>@item.Name</h2>
+                            <div>
+                                <h2>Cena</h2>
+                                @item.Price Kč
+                            </div>
+                            <input id="delivery" value="@item.Id" class="ms-5 me-3" name="delivery" type="radio">
+                        </div>                       
+                    </div>
+                </div>
+            </div>
+        }
+        <div class="d-flex justify-content-center m-3" style="gap:40px">
+            <a asp-action="Index" asp-controller="Cart"><button class="Btnsecondary" type="button">Zpět</button></a>
+            <button class="BtnPrimary" type="submit">Dále</button>
+        </div>
+    </div>
+    </form>
+</div>

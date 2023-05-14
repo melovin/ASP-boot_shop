@@ -1,0 +1,130 @@
+﻿@{
+    ViewData["Title"] = "Produkty";
+}
+@{
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+<div class="d-flex">
+    <aside>
+        <div class="d-flex flex-column flex-shrink-0 p-3 text-bg-dark" style="width: 280px;height: 100vh;">
+            <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+                <svg class="bi pe-none me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
+                <span class="fs-4">Admin</span>
+            </a>
+            <hr>
+            <ul class="nav nav-pills flex-column mb-auto">
+                @*<li class="nav-item">
+                <a href="#" class="nav-link active" aria-current="page">
+                <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#home"></use></svg>
+                Dashboard
+                </a>
+                </li>*@
+                <li>
+                    <a asp-action="Index" class="nav-link text-white">
+                        <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#speedometer2"></use></svg>
+                        Objednávky
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="nav-link text-white active">
+                        <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#table"></use></svg>
+                        Produkty
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="nav-link text-white">
+                        <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#grid"></use></svg>
+                        Kategorie
+                    </a>
+                </li>
+                <li>
+                    <a asp-action="Deliverypayment" class="nav-link text-white">
+                        <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#people-circle"></use></svg>
+                        Doprava a platba
+                    </a>
+                </li>
+                <li>
+                    <a asp-action="Logout" asp-controller="Login" class="nav-link text-white">
+                        <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#people-circle"></use></svg>
+                        Odhlásit se
+                    </a>
+                </li>
+            </ul>
+            <hr>
+            <div class="dropdown">
+                <a href="#" class="d-flex align-items-center text-white text-decoration-none dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                    <img src="https://github.com/mdo.png" alt="" width="32" height="32" class="rounded-circle me-2">
+                    <strong>Admin</strong>
+                </a>
+                <ul class="dropdown-menu dropdown-menu-dark text-small shadow">
+                    <li><a class="dropdown-item" href="#">New project...</a></li>
+                    <li><a class="dropdown-item" href="#">Settings</a></li>
+                    <li><a class="dropdown-item" href="#">Profile</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#">Sign out</a></li>
+                </ul>
+            </div>
+        </div>
+    </aside>
+    <div class="content justify-content-evenly mx-auto" style="width:80%">
+        <div>
+            <h1 class="text-center mb-5">Přehled produktů</h1>
+            <a asp-action="Productadd" class="btn btn-secondary">Přidat produkt</a>
+        </div>
+        <div class="wrapper">
+
+            @foreach (TbProduct item in ViewBag.Products)
+            {
+                <div class="card w-100 mb-5">
+                    <div class="card-header">
+                        Počet variant: @item.TbStocks.Count
+                    </div>
+                    <div class="card-body">
+                        <div class="d-flex">
+                            <img style="width:70px" src="@item.TbPictures.FirstOrDefault().Path">
+                            <div class="ms-4">
+                                <h4 class="">@item.Name</h4>
+                                @*<h5 class="card-title">@</h5>*@
+                                <div class="card-text d-flex mb-3">
+                                    <div class="me-5">
+                                        @item.Description
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ms-7 d-flex justify-content-around">
+                            <div>Materiál: <b>@item.Material</b></div>
+                            <div>Určení: <b>@item.Type</b></div>
+                            @{
+                                List<TbCategoriesDetail> cats = (ViewBag.Categories as List<TbCategoriesDetail>).Where(x => x.IdProduct == item.Id).ToList();
+                            }
+                            @if (cats is not null)
+                            {
+                                <div>
+                                    <p>Kategorie:</p>
+                                    @foreach (TbCategoriesDetail item1 in cats)
+                                    {
+                                    <b>@item1.IdCategoryNavigation.Name</b>
+                                    }
+                                </div>
+                                
+                            }                          
+                            @if(item.Active==true)
+                            {
+                                <b style="color:green">Produkt je aktivní</b>
+                            }
+                            else
+                            {
+                                <b style="color:red">Produkt není aktivní</b>
+                            }
+                        </div>
+                        <div class="d-flex justify-content-end">
+                            <a asp-action="Productremove" asp-route-produktid="@item.Id" class="btn btn-secondary">Odstranit</a>
+                            <a asp-action="Produktedit" asp-route-produktid="@item.Id" class="btn btn-primary ms-3">Edit</a>
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+</div>

@@ -1,0 +1,87 @@
+body[b-3n7levm1sg] {
+font-family: 'libre franklin';
+}
+.products[b-3n7levm1sg] {
+margin-right: auto;
+margin-left: auto;
+text-align: center;
+}
+
+.products:hover[b-3n7levm1sg] {
+cursor: pointer;
+}
+
+.products .wrapper .product[b-3n7levm1sg] {
+border: solid #b9b9b9 1px;
+}
+
+.products .wrapper .product .product_photo[b-3n7levm1sg] {
+height: 15rem;
+}
+
+.products .wrapper .price[b-3n7levm1sg] {
+display: flex;
+margin-left: 1rem;
+gap: 1rem;
+justify-content: space-between;
+}
+
+.products .wrapper .price .actual_price[b-3n7levm1sg] {
+display: flex;
+gap: 1rem;
+align-items: center;
+}
+
+.products .wrapper .price .actual_price .current[b-3n7levm1sg] {
+color: #c7232f;
+font-weight: bold;
+}
+
+.products .wrapper .price .actual_price .old[b-3n7levm1sg] {
+color: #ababab;
+}
+
+.products .product .desc[b-3n7levm1sg] {
+margin-left: 1rem;
+width: 80%;
+text-align: left;
+}
+
+.hidden_cart[b-3n7levm1sg] {
+display: none;
+}
+
+.products .wrapper .product:hover .hidden_cart[b-3n7levm1sg] {
+display: block;
+margin-right: 1rem;
+}
+
+.products .wrapper .product:hover[b-3n7levm1sg] {
+outline: solid #c7232f 2px;
+}
+
+.products button[b-3n7levm1sg] {
+border: none;
+background: #c7232f;
+color: white;
+font-size: 25px;
+width: 20rem;
+padding: 1rem;
+margin-top: 3rem;
+cursor: pointer;
+}
+button:hover[b-3n7levm1sg] {
+background-color: white;
+color: #c7232f;
+outline: solid red 1px;
+}
+
+.notDesktop[b-3n7levm1sg] {
+display: none !important;
+}
+
+@media screen and (max-width:640px) {
+.products button[b-3n7levm1sg] {
+width: 18rem;
+}
+}

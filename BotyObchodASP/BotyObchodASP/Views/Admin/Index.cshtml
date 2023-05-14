@@ -1,0 +1,136 @@
+﻿@{
+    ViewData["Title"] = "Admin";
+}
+@{
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<div class="d-flex">
+    <aside>
+        <div class="d-flex flex-column flex-shrink-0 p-3 text-bg-dark" style="width: 280px;height: 100vh;">
+            <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+                <svg class="bi pe-none me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
+                <span class="fs-4">Admin</span>
+            </a>
+            <hr>
+            <ul class="nav nav-pills flex-column mb-auto">
+                @*<li class="nav-item">
+                <a href="#" class="nav-link active" aria-current="page">
+                <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#home"></use></svg>
+                Dashboard
+                </a>
+                </li>*@
+                <li>
+                    <a href="#" class="nav-link text-white active">
+                        <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#speedometer2"></use></svg>
+                        Objednávky
+                    </a>
+                </li>
+                <li>
+                    <a asp-action="Produkty" class="nav-link text-white">
+                        <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#table"></use></svg>
+                        Produkty
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="nav-link text-white">
+                        <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#grid"></use></svg>
+                        Kategorie
+                    </a>
+                </li>
+                <li>
+                    <a asp-action="Deliverypayment" class="nav-link text-white">
+                        <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#people-circle"></use></svg>
+                        Doprava a platba
+                    </a>
+                <li>
+                    <a asp-action="Logout" asp-controller="Login" class="nav-link text-white">
+                        <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#people-circle"></use></svg>
+                        Odhlásit se
+                    </a>
+                </li>
+                </li>
+            </ul>
+            <hr>
+            <div class="dropdown">
+                <a href="#" class="d-flex align-items-center text-white text-decoration-none dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                    <img src="https://github.com/mdo.png" alt="" width="32" height="32" class="rounded-circle me-2">
+                    <strong>Admin</strong>
+                </a>
+                <ul class="dropdown-menu dropdown-menu-dark text-small shadow">
+                    <li><a class="dropdown-item" href="#">New project...</a></li>
+                    <li><a class="dropdown-item" href="#">Settings</a></li>
+                    <li><a class="dropdown-item" href="#">Profile</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#">Sign out</a></li>
+                </ul>
+            </div>
+        </div>
+    </aside>
+    <div class="content justify-content-evenly mx-auto" style="width:80%">
+        <h1 class="text-center mb-5">Přehled objednávek</h1>
+        <div class="wrapper">
+            @foreach(TbOrder item in ViewBag.Orders)
+            {
+                <div class="card w-100 mb-5" >
+                    <div class="card-header">
+                        @item.CreationDate
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">@item.IdCustomerNavigation.Name @item.IdCustomerNavigation.Surname || @item.IdCustomerNavigation.Address, @item.IdCustomerNavigation.City - @item.IdCustomerNavigation.Country</h5>
+                        <div class="card-text d-flex mb-3">
+                            <div class="me-5">
+                                Způsob doručení: @item.IdDeliveryNavigation.Name (@item.IdDeliveryNavigation.Price Kč)
+                            </div>
+                            <div class ="me-5">
+                                Způsob platby: @item.IdPaymentNavigation.Name (@item.IdPaymentNavigation.Price Kč)
+                            </div>
+                            <div class="me-5">
+                                Stav objednávky: @item.State
+                            </div>
+                        </div>
+                        @{
+                            List<TbOrderDetail> myList = (ViewBag.Details as List<TbOrderDetail>).Where(x => x.IdOrder == item.Id).ToList();
+                            double total = 0;
+                        }
+                        <h4>Produkty</h4>
+                        @foreach (TbOrderDetail item2 in myList)
+                        {
+                            <div class="d-flex align-items-center">
+                                <div class="me-5"><h5>@((ViewBag.Stock as List<TbStock>).FirstOrDefault(x => x.Id == item2.IdStock).IdProductNavigation.Name)</h5></div>
+                                <div class="me-5">
+                                    Množství: @item2.Quantity
+                                </div>
+                                <div class="me-5">
+                                    Sleva: @item2.Discount %
+                                </div>
+                                <div class="me-5">
+                                    DPH: @item2.Tax %
+                                </div>
+                                <div class="me-5">
+                                    Cena: @item2.Price Kč
+                                </div>
+                                <div class="me-5">
+                                    Velikost: @((ViewBag.Stock as List<TbStock>).FirstOrDefault(x => x.Id == item2.IdStock).Size)
+                                </div>
+                                <div class="me-5">
+                                    Barva: @((ViewBag.Stock as List<TbStock>).FirstOrDefault(x => x.Id == item2.IdStock).IdColorNavigation.Name)
+                                </div>
+                            </div>
+                            <hr>
+                            {
+                                total += item2.Price;
+                            }
+                        }
+                        @{
+                            total += @item.IdPaymentNavigation.Price + @item.IdDeliveryNavigation.Price;
+                        }
+                        <div class="me-5 mb-3 mt-3 d-flex justify-content-end">
+                            <h2 style="color:red;">Celková cena: @total Kč</h2>
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+    </div>  
+</div>

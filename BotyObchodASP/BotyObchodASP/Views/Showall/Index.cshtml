@@ -1,0 +1,119 @@
+﻿@{
+    ViewData["Title"] = "Katalog";
+}
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+
+<h1>Naše nabídka</h1>
+@{
+    List<TbProduct> myList = ViewBag.Products;
+    List<string> colors = null;
+    if (ViewBag.SelectedColors != null)
+        colors = ViewBag.SelectedColors as List<string>;
+}
+<form id="colorsize" name="filtration" asp-action="Index">
+<div class="search d-flex">
+        <select class="form-select" name="orderBy">
+            <option disabled selected>Řadit podle</option>
+            <option name="orderby" value="pricelth">Cena: Vzestupně</option>
+            <option name="orderby" value="pricehtl">Cena: Sestupně</option>
+            <option name="orderby" value="abcaz">Abecedně [A-Z]</option>
+            <option name="orderby" value="abcza">Abecedně [Z-A]</option>
+        </select>
+        <div class="d-flex justify-content-center m-3">
+            <button type="submit">Seřadit</button>
+        </div>
+    
+
+</div>
+<main class="d-flex">
+    <div class="products">
+        <div class="wrapper">
+            @if(myList.Count > 0)
+            {
+                @for (int i = ViewBag.From; i < ViewBag.To; i++)
+                {
+                    TbProduct prod = myList[i];
+                    <vc:product product="prod"></vc:product>
+                    @if (i == ViewBag.Products.Count - 1)
+                    {
+                        break;
+                    }
+                    @*    @ViewBag.Products[ViewBag.From]*@
+                }
+            }
+            else{
+                <h2>Takové varianty zatím bohužel nemáme</h2>
+            }
+        </div>
+        @*<a asp-controller="Showall" asp-action="Index"><button>zobrazit celou nabídku</button></a>*@
+    </div>
+    <aside>
+        <div class="d-flex justify-content-center align-items-center">
+            <img src="./icons/filter.svg" />
+            <h2>Filtrace</h2>         
+        </div>
+        <hr />
+        
+            <div class="d-flex align-items-center ms-5 mt-3">
+                <img src="./icons/palette.svg" />
+                <h3>Barva</h3>
+            </div>
+            @foreach (TbColor color in ViewBag.Colors)
+            {
+                <div class="d-flex ps-5 align-items-center">
+                    @if(ViewBag.SelectedColors != null && ViewBag.SelectedColors.Contains(color.Name))
+                    {
+                        <input checked value="@color.Name" class="ms-5 me-3" name="colors" type="checkbox">
+                    }
+                    else{
+                        <input value="@color.Name" class="ms-5 me-3" name="colors" type="checkbox">
+                    }
+                    <h4>@color.Name</h4>
+                </div>
+            }
+            <div class="d-flex align-items-center ms-5 mt-3">
+                <img src="./icons/ruler.svg" />
+                <h3>Velikost</h3>
+            </div>
+            @foreach (TbStock size in ViewBag.Sizes)
+            {
+                <div class="d-flex ps-5 align-items-center">
+                    @if (ViewBag.SelectedSizes != null && ViewBag.SelectedSizes.Contains(size.Size))
+                    {
+                        <input checked value="@size.Size" class="ms-5 me-3" name="sizes" type="checkbox">
+                    }
+                    else
+                    {
+                        <input value="@size.Size" class="ms-5 me-3" name="sizes" type="checkbox">
+                    }
+                    <h4>@size.Size</h4>
+                </div>
+            }
+            <div class="d-flex justify-content-center m-3">
+                <button type="submit">Vyhledat</button>
+            </div>
+            <div class="d-flex justify-content-center m-3">
+                <button class="Btnsecondary" asp-route-cancel="@true" type="submit">Zrušit</button>
+            </div>           
+    </aside>       
+</main>
+<div class="d-flex justify-content-center">
+        @if (ViewBag.From != 0)
+        {
+            <div class="d-flex justify-content-center m-3">
+                <button class="Btnsecondary" asp-route-from="@(ViewBag.From - 12)" asp-route-to="@(ViewBag.To - 12)" type="submit">Předchozí</button>
+            </div>
+        }
+        @if (ViewBag.To != ViewBag.Products.Count)
+        {
+            <div class="d-flex justify-content-center m-3">
+                <button class="BtnPrimary" asp-route-from="@(ViewBag.From + 12)" asp-route-to="@(ViewBag.To + 12)" type="submit">Následující</button>
+            </div>
+        }
+</div>
+
+
+
+</form>
+

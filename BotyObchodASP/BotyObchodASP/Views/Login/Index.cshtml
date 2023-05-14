@@ -1,0 +1,38 @@
+﻿@{
+    ViewData["Title"] = "Login";
+}
+@{
+    Layout = "~/Views/Shared/_LayoutLogin.cshtml";
+}
+@model TbAdmin
+<div class="text-center vh-100" style="width: 400px !important;margin-left:auto;margin-right:auto; display:flex">
+    <main class="form-signin w-100 m-auto">
+        <form asp-action="Index" asp-controller="Login">
+            <h1 class="h3 mb-3 fw-normal">Please sign in</h1>
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-floating">
+                <input asp-for="Username" type="text" class="form-control" id="floatingInput" placeholder="Rusli...">
+                <label for="floatingInput">Uživatelsné jméno</label>
+                <span asp-validation-for="Username" class="text-danger"></span>
+            </div>
+            <div class="form-floating">
+                <input asp-for="Password" type="password" class="form-control" id="floatingPassword" placeholder="Heslo...">
+                <label for="floatingPassword">Heslo</label>
+                <span asp-validation-for="Password" class="text-danger"></span>
+            </div>
+
+            <div class="checkbox mb-3">
+                <label>
+                    <input type="checkbox" value="remember-me"> Pamatovat si mě
+                </label>
+            </div>
+            <button class="w-100 btn btn-lg btn-primary" type="submit">Přihlásit se</button>
+        </form>
+    </main>
+</div>
+
+@*@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+    }*@
