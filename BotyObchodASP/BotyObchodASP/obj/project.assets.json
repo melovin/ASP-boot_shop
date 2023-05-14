@@ -1915,25 +1915,25 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Ruslana Zubareva\\.nuget\\packages\\": {},
-    "A:\\Microsoft\\Xamarin\\NuGet\\": {}
+    "C:\\Users\\rusla\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Ruslana Zubareva\\Desktop\\BotyObchodASP\\BotyObchodASP\\BotyObchodASP.csproj",
+      "projectUniqueName": "C:\\Users\\rusla\\Desktop\\BotyObchodASP\\BotyObchodASP\\BotyObchodASP.csproj",
       "projectName": "BotyObchodASP",
-      "projectPath": "C:\\Users\\Ruslana Zubareva\\Desktop\\BotyObchodASP\\BotyObchodASP\\BotyObchodASP.csproj",
-      "packagesPath": "C:\\Users\\Ruslana Zubareva\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Ruslana Zubareva\\Desktop\\BotyObchodASP\\BotyObchodASP\\obj\\",
+      "projectPath": "C:\\Users\\rusla\\Desktop\\BotyObchodASP\\BotyObchodASP\\BotyObchodASP.csproj",
+      "packagesPath": "C:\\Users\\rusla\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\rusla\\Desktop\\BotyObchodASP\\BotyObchodASP\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "A:\\Microsoft\\Xamarin\\NuGet\\"
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\Ruslana Zubareva\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        "C:\\Users\\rusla\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net6.0"
