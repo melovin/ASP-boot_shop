@@ -1,8 +1,8 @@
 # ASP - BOOT SHOP
 ### > School project
   * C#
-  * session
-  * login
+  * session (cart, login)
+  * authorization
   * database (entity framework)
   * admin
   
